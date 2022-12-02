@@ -4,10 +4,10 @@ Summary:	Library for geometric computing extending MatGeom functions
 Name:		octave-%{octpkg}
 Version:	4.0.0
 Release:	1
-Source0:	http://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv3+ and BSD and Boost Software License
 Group:		Sciences/Mathematics
-Url:		https://octave.sourceforge.io/%{octpkg}/
+Url:		https://packages.octave.org/%{octpkg}/
 
 BuildRequires:	octave-devel >= 4.2.0
 BuildRequires:	octave-matgeom >= 1.0.0
@@ -20,8 +20,6 @@ Requires(postun): octave
 
 %description
 This library extends MatGeom functionality.
-
-This package is part of community Octave-Forge collection.
 
 %files
 %license COPYING
