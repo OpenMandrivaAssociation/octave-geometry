@@ -1,19 +1,19 @@
 %global octpkg geometry
 
 Summary:	Library for geometric computing extending MatGeom functions
-Name:		octave-%{octpkg}
+Name:		octave-geometry
 Version:	4.0.0
-Release:	1
-Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Release:	2
 License:	GPLv3+ and BSD and Boost Software License
 Group:		Sciences/Mathematics
-Url:		https://packages.octave.org/%{octpkg}/
+Url:		https://packages.octave.org/geometry/
+Source0:	https://downloads.sourceforge.net/octave/geometry-%{version}.tar.gz
 
-BuildRequires:	octave-devel >= 4.2.0
-BuildRequires:	octave-matgeom >= 1.0.0
+BuildRequires:  octave-devel >= 4.2.0
+BuildRequires:  octave-matgeom >= 1.0.0
 
 Requires:	octave(api) = %{octave_api}
-Requires:	octave-matgeom >= 1.0.0
+Requires:  	octave-matgeom >= 1.0.0
 
 Requires(post): octave
 Requires(postun): octave
@@ -24,18 +24,15 @@ This library extends MatGeom functionality.
 %files
 %license COPYING
 %doc NEWS
-%dir %{octpkglibdir}
-%{octpkglibdir}/*
 %dir %{octpkgdir}
 %{octpkgdir}/*
+%dir %{octpkglibdir}
+%{octpkglibdir}/*
 
 #---------------------------------------------------------------------------
 
 %prep
 %autosetup -p1 -n %{octpkg}-%{version}
-
-# remove backup files
-#find . -name \*~ -delete
 
 %build
 %set_build_flags
