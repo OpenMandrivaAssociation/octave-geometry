@@ -9,8 +9,9 @@ Group:		Sciences/Mathematics
 Url:		https://packages.octave.org/geometry/
 Source0:	https://downloads.sourceforge.net/octave/geometry-%{version}.tar.gz
 
-BuildRequires:  octave-devel >= 4.2.0
-BuildRequires:  octave-matgeom >= 1.0.0
+BuildRequires:	octave-devel >= 4.2.0
+BuildRequires:	octave-matgeom >= 1.0.0
+BuildRequires:	stdc++-devel
 
 Requires:	octave(api) = %{octave_api}
 Requires:  	octave-matgeom >= 1.0.0
