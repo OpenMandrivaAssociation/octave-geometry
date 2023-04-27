@@ -8,6 +8,8 @@ License:	GPLv3+ and BSD and Boost Software License
 Group:		Sciences/Mathematics
 Url:		https://packages.octave.org/geometry/
 Source0:	https://downloads.sourceforge.net/octave/geometry-%{version}.tar.gz
+# https://savannah.gnu.org/bugs/index.php?60884
+Patch0:		compile-with-g++-v11.patch
 
 BuildRequires:	octave-devel >= 4.2.0
 BuildRequires:	octave-matgeom >= 1.0.0
