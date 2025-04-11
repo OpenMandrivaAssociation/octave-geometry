@@ -3,7 +3,7 @@
 Summary:	Library for geometric computing extending MatGeom functions
 Name:		octave-geometry
 Version:	4.1.0
-Release:	1
+Release:	2
 License:	GPLv3+ and BSD and Boost Software License
 Group:		Sciences/Mathematics
 Url:		https://packages.octave.org/geometry/
